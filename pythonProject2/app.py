@@ -3,7 +3,7 @@
 # print(" ||||")
 
 # print("*" * 10)
-# ******************************************************************************************
+# *************************** Variables ************************************************
 # price = 10
 # rating = 4.9
 # name = "Glen"
@@ -12,23 +12,26 @@
 # print(price)
 #
 #
-# *********************************************************************************************
+# *********************** Receiving input ****************************************************
 # first_name = input("enter your first name: ")
 # last_name = input("enter your last name: ")
-# birth_year =int(input("enter your birth year: "))
-# age = 2024 - birth_year
 # new_patient = input("are you a new patient here?: ")
 # print(first_name)
 # print(last_name)
-# print(age)
 # print(new_patient)
-# ************************************************************************************************
+
+# ************************* Type conversion ***********************************************
+# birth_year =int(input("enter your birth year: ")) 
+# age = 2024 - birth_year 
+# print(age)
+
+# **************************** Formatted Strings *******************************************
 # first ="John"
 # last = "Smith"
 # # message = first + '[' + last + '] is a coder'
 # msg = f'{first} {last} is a coder'
 # print(msg)
-# **********************************************************************************************
+# ************************* Strings and string Methods *************************************************
 # course = "Python for Beginners"
 # # print(len(course))
 # print(course.upper())
@@ -37,7 +40,7 @@
 # print(course.replace('Beginners', 'absolute Beginners'))
 # print(course)
 # print('Python' in course)
-# ***************************************************************************************************
+# ******************************* If Statments ************************************************
 # is_hot = False
 # is_cold = False
 #
@@ -47,7 +50,7 @@
 #     print("get a jacket")
 # else:
 #     print("lovely day")
-# **************************************************************************************************
+# ****************************** Logical operators *******************************************************
 # price = 1000000
 # buyer_credit_good = True
 #
@@ -65,7 +68,7 @@
 # if has_good_credit and not has_criminal_record:
 #     print("eligible for loan")
 
-# **************************************************************************************************
+# ***************************** Comparison Operators ********************
 # name = "Glen"
 # if  len(name) < 4:
 #     print("minimum name length 3 letters")
@@ -73,13 +76,14 @@
 #     print("maximum name length 50 letters")
 # else:
 #     print("name looks good")
-# ****************************************************************************************************
+
+# ************************* While Loops *************************
 # i = 1
 # while i <= 5:
 #     print('*' * i)
 #     i = i + 1
 # print("done")
-# ****************************************************************************************************
+# ***************************** Building a guessing game wit while Loops *************************
 # secret_number = 9
 # i = 0 # represents the guess count
 # limit = 3
@@ -91,10 +95,11 @@
 #         break
 # else:
 #     print('Sorry no Luck')
-# ******************************************************************************************************
+# 
 # command = ""
 # started = False
 #
+# ********************************** Building a Car game with what has been Learned so far ******************************************
 # while command != "quit":
 #     command = input("> ").lower()
 #     if command == "start":
@@ -115,7 +120,7 @@
 #         stop - to stop
 #         quit - to quit
 #         ''')
-# **************************************************************************************************
+# **************************** For Loops **********************************************
 
 # for item in range(5, 10, 2):
 #     print(item)
@@ -128,6 +133,7 @@
 # for price in prices:
 #     total += price
 # print(f"total: {total}")
+#                              Nested Loops
 
 # for x in range(4):
 #     for y in range(3):
@@ -151,7 +157,9 @@
         # Process
         # finished
         # with exit code 0
-# *************************************************************************************************
+
+
+#                              Nested Loops 
 # numbers = [2, 2, 2, 2, 5]
 # for items in numbers:
 #     output = ''
@@ -164,7 +172,7 @@
     # xxxxx
     # xx
     # xx
-# ***************************************************************************************************
+# ********************************* Lists *****************************************************
 # names = ['john', 'bob', 'mosh', 'sarah', 'mary']
 # names [0] = 'jon' # this modified the item in the list
 # print(names[2:4])
@@ -184,7 +192,7 @@
 # 46
 # 2
 # 46
-# ****************************************************************************************************
+# ********************************** 2D Lists******************************************************
 # matrix = [
 #     [1, 2, 3],
 #     [4, 5, 6],
@@ -193,7 +201,7 @@
 # for row in matrix:
 #     for item in row:
 #         print(item)
-# ****************************************************************************************************
+# *********************************  List methods*************************************************
 # numbers = [4, 6, 11, 8, 11, 8, 46, 46, 2]
 # numbers2 = numbers.copy()
 # numbers.append(10)
@@ -206,16 +214,17 @@
 # print(uniques)
 
 # [4, 6, 11, 8, 46, 2]
-# ***************************************************************************************************
+# ************************************ Turples **********************************************
 # numbers = (4, 6, 8, 11, 46, 2)
 # numbers[0] = 10
 # print(numbers[0]) # outlines that Tuples are immutable, (can't be changed)
 
+# ************************ Unpacking **************************************************
 # coordinates = (1, 2, 3)
 # x, y, z = coordinates
 # print(coordinates)
-# *****************************************************************************************************
-# Dictionary
+# ***************************** Dictionaries *********************************************************
+# 
 # customer = {
 #     "name" : "John Smith",
 #     "age": 30,
@@ -223,7 +232,7 @@
 # }
 # print(customer["name"])
 # print(customer.get("Name"))
-# *******************************************************************************************************
+# 
 # phone_number = input("phone: ")
 # digit_map = {
 #     '1': 'one',
@@ -235,7 +244,7 @@
 # for ch in phone_number:
 #     output += digit_map.get(ch, "!") + ' '
 # print(output)
-# ******************************************************************************************************
+#                           Emoji Converter
 # message = input(">")
 # words = message.split(' ')
 # emojis = {
@@ -246,23 +255,25 @@
 # for word in words:
 #     output += emojis.get(word, word) + " "
 # print(output)
-# *******************************************************************************************************
+
+
+# *************************** Functions*********************************************************
 # def greet_user(first_name, last_name):
 #     print(f"hi {first_name} {last_name}")
 #     print("welcome aboard")
 #
-# ****************************************************************************************************
+#                                Parameters Key word and positional arguments
 # print("start")
 # greet_user("John", "smith")
 # greet_user("Mary", "Jane")
 # print("finish")
-# ***************************************************************************************************
+#                                        Return Statements 
 # def square(number):
 #     return number * number
 #
 # print(square(3))
 
-# *************************************************************************************************
+#                               creating Reusable functions
 # def emoji_converter(message):
 #     words = message.split(' ')
 #     emojis = {
@@ -278,7 +289,7 @@
 # message = input(">")
 # print(emoji_converter(message))
 
-# ******************************** Try/Except BlocK***************************
+# ******************************** Exceptions ***************************
 # try:
 #     age = int(input("age: "))
 #     print(age)
@@ -286,7 +297,11 @@
 #     print("Please enter a numeric value")
 #     age = int(input("age: "))
 #     print(age)
-# ****************************************************************************************
+# ************************************************************************************
+#                           Introduction to Comments
+#*************************************************************************************
+
+# *************************** Classes ****************************************
 # class Point:
 #     def __init__(self, x, y):
 #         self.x = 10
@@ -296,7 +311,7 @@
 #
 #     def draw(self):
 #         print("draw")
-# ********************************************************************************************
+#                               Constructors
 #
 # point = Point(10, 20)
 # point.x = 11
@@ -330,7 +345,7 @@
 # person.talk
 # print(person())
 
-# *************************************************************************************************
+# ***************************** Inheritance ***********************************************
 # class Mammal:
 #     def walk(self):
 #         print("walk")
@@ -363,7 +378,7 @@
 # # print(converters.kg_to_lbs(70))
 
 
-# ************************************************************************************************
+# 
 # from Utils import find_max
 #
 # numbers = [1, 5, 6, 8, 44]
@@ -373,28 +388,26 @@
 # from ecommerce import shipping
 #
 # shipping.calc_shipping()
-# ***********************************************************************************************
+# ***************************** IGenerating Random Values***************************************************
 import random
 #
 #
 # members = ['John', 'Mary', 'bob', 'Jill']
 # leader = random.choice(members)
 # print(leader)
-# *************************************************************************************************
+# 
 # for i in range(3):
 #     random.random()
 #     print(random.randint(10, 20))
 
-# *************************************************************************************************
-
+# 
 # dice = range(1,6)
 # roll = random.choice(dice)
 # roll2 = random.choice(dice)
 #
 # print(roll, ',', roll2)
 #
-# ************************************************************************************************
-
+#                               
 # class Dice:
 #     def roll(self):
 #         first = random.randint(1,6)
@@ -405,13 +418,13 @@ import random
 # dice = Dice()
 # print(dice.roll())
 
-# ******************************************************************************************
+# **************************** Working with Directories *****************************************
 # from pathlib import Path
 #
 # path = Path("ecommerce")
 # print(path.exists())
 
-# ********************************************************************************************
+# ******************************** Automation with Python ******************************************
 # import openpyxl as xl
 # from openpyxl.chart import BarChart, Reference
 #
@@ -432,12 +445,11 @@ import random
 #               max_row=sheet.max_row,
 #               min_col=4,
 #               max_col=4)
-# ******************************************************************************************
-
+# 
 #     chart = BarChart()
 #     chart.add_data(values)
 #     sheet.add_chart(chart, 'e2')
 #
 #     wb.save(filename)
 
-# ************* Machine Learning **********
+# ******************************************** Machine Learning *****************************************
