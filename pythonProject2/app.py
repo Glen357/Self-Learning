@@ -20,11 +20,13 @@
 # print(last_name)
 # print(new_patient)
 
-# ************************* Type conversion ***********************************************
+# 
 # birth_year =int(input("enter your birth year: ")) 
 # age = 2024 - birth_year 
 # print(age)
-
+#
+# ************************* Type conversion ****** Moved to converters.py ************************
+#
 # **************************** Formatted Strings *******************************************
 # first ="John"
 # last = "Smith"
