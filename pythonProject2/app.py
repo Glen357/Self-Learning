@@ -3,6 +3,8 @@
 # print(" ||||")
 
 # print("*" * 10)
+# These lines simply print some text to the console
+
 # *************************** Variables ************************************************
 # price = 10
 # rating = 4.9
@@ -10,7 +12,7 @@
 # is_published = False
 #
 # print(price)
-#
+#The input() function is used to receive input from the user, assigning the input to variables
 #
 # *********************** Receiving input ****************************************************
 # first_name = input("enter your first name: ")
@@ -26,13 +28,15 @@
 # print(age)
 #
 # ************************* Type conversion ****** Moved to converters.py ************************
-#
+# it converts a user's input from a string to an integer for calculation
 # **************************** Formatted Strings *******************************************
 # first ="John"
 # last = "Smith"
 # # message = first + '[' + last + '] is a coder'
 # msg = f'{first} {last} is a coder'
 # print(msg)
+#  here iuse formatted strings to create strings with variables interpolated
+
 # ************************* Strings and string Methods *************************************************
 # course = "Python for Beginners"
 # # print(len(course))
@@ -42,6 +46,9 @@
 # print(course.replace('Beginners', 'absolute Beginners'))
 # print(course)
 # print('Python' in course)
+
+# Various string methods 
+
 # ******************************* If Statments ************************************************
 # is_hot = False
 # is_cold = False
@@ -52,6 +59,8 @@
 #     print("get a jacket")
 # else:
 #     print("lovely day")
+# these statements are used to control the flow of the program based on certain conditions(Conditional statements)
+
 # ****************************** Logical operators *******************************************************
 # price = 1000000
 # buyer_credit_good = True
@@ -69,6 +78,8 @@
 #
 # if has_good_credit and not has_criminal_record:
 #     print("eligible for loan")
+# here I showed using logical operators in conditional statements
+
 
 # ***************************** Comparison Operators ********************
 # name = "Glen"
@@ -78,13 +89,15 @@
 #     print("maximum name length 50 letters")
 # else:
 #     print("name looks good")
-
+#  I Used these comparisson operators to compare the values of the name variable. I could use this to compare user inputs
 # ************************* While Loops *************************
 # i = 1
 # while i <= 5:
 #     print('*' * i)
 #     i = i + 1
 # print("done")
+# While loops are used for repeated execution based on a condition
+
 # ***************************** Building a guessing game wit while Loops *************************
 # secret_number = 9
 # i = 0 # represents the guess count
@@ -100,7 +113,8 @@
 # 
 # command = ""
 # started = False
-#
+#this is a guessing game where the user has to guess a secret number using a while loop and comparisson operators
+
 # ********************************** Building a Car game with what has been Learned so far ******************************************
 # while command != "quit":
 #     command = input("> ").lower()
@@ -122,6 +136,8 @@
 #         stop - to stop
 #         quit - to quit
 #         ''')
+#  this is a car game where the user can start, stop, or get help there is a while loop and comparison operators with if, else and elif statements
+
 # **************************** For Loops **********************************************
 
 # for item in range(5, 10, 2):
@@ -140,6 +156,8 @@
 # for x in range(4):
 #     for y in range(3):
 #         print(f'({x}, {y})')
+
+# For loops are used for iterating over sequences of items. below is the print out in the terminal
 
         # C:\Users\Admin\PycharmProjects\pythonProject2\.venv\Scripts\python.exe
         # C:\Users\Admin\PycharmProjects\pythonProject2\app.py
@@ -174,11 +192,15 @@
     # xxxxx
     # xx
     # xx
+# these nested loops create patterns or iterate over varying data structures
+
 # ********************************* Lists *****************************************************
 # names = ['john', 'bob', 'mosh', 'sarah', 'mary']
 # names [0] = 'jon' # this modified the item in the list
 # print(names[2:4])
 # print(names)
+# list operations can modify the elements of a list
+
 # *****************************************************************************************************
 # numbers = [4, 6, 8, 11, 46, 2] # My attempt
 # print(max(numbers))
@@ -225,6 +247,9 @@
 # coordinates = (1, 2, 3)
 # x, y, z = coordinates
 # print(coordinates)
+
+# the above 2 sections show how tuples are immutable and how they can be used for unpacking
+
 # ***************************** Dictionaries *********************************************************
 # 
 # customer = {
@@ -257,7 +282,7 @@
 # for word in words:
 #     output += emojis.get(word, word) + " "
 # print(output)
-
+# Dictionaries and their usage, including iterating over keys and values
 
 # *************************** Functions*********************************************************
 # def greet_user(first_name, last_name):
@@ -346,6 +371,8 @@
 # person.birth_year
 # person.talk
 # print(person())
+# Classes are defined along with methods(__init__), and objects are created from those classes
+
 
 # ***************************** Inheritance ***********************************************
 # class Mammal:
@@ -369,6 +396,8 @@
 # cat1 = Cat()
 # cat1.walk()
 # cat1.be_annoying()
+# Inheritance is used to create subclasses that share behaviours
+
 # **************************************************************************************************
 # ****************** Modules and packages **************************
 
@@ -390,6 +419,7 @@
 # from ecommerce import shipping
 #
 # shipping.calc_shipping()
+# This section is about importing modules and packages and using their functions/variables
 # ***************************** IGenerating Random Values***************************************************
 import random
 #
@@ -419,12 +449,13 @@ import random
 #
 # dice = Dice()
 # print(dice.roll())
-
+# This is to Generate random numbers and choosing random items from a list
 # **************************** Working with Directories *****************************************
 # from pathlib import Path
 #
 # path = Path("ecommerce")
 # print(path.exists())
+# Here I use the pathlib package to work with other directories and files
 
 # ******************************** Automation with Python ******************************************
 # import openpyxl as xl
@@ -453,5 +484,6 @@ import random
 #     sheet.add_chart(chart, 'e2')
 #
 #     wb.save(filename)
+# this piece showed me how to manipulate Excel files in Python for fast data processing
 
 # ******************************************** Machine Learning *****************************************
